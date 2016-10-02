@@ -40,7 +40,7 @@ public class ID3 {
             return;
         }
         System.out.println(root.findMaxIG() + " " + root.randomSelectIG());
-        int index = root.randomSelectIG();     //root.findMaxIG();
+        int index = root.findMaxIG();//root.randomSelectIG();
         if (index == -1) {
             root.classBelonged = root.positive > root.negative ? 0 : 1;
             return;
